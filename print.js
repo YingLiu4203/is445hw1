@@ -25,7 +25,7 @@ export function printUsers(users) {
   outputDiv.innerHTML = output
 }
 
-export function showError(e) {
+export default e => {
   let error = `<h2>There is an excepton: ${e.message}</h2>`
   const outputDiv = document.getElementById('output')
   outputDiv.innerHTML = error

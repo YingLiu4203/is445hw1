@@ -1,12 +1,12 @@
-export class HttpError extends Error {
+class HttpError extends Error {
   constructor(message) {
     super(message)
     this.name = 'HttpError'
   }
 }
 
-export function loadJson() {
-  return fetch('https://jsonplaceholder.typicode.com/users')
+export function loadJson(url) {
+  return fetch(url)
     .then(response => {
       if (response.status === 200) {
         return response.json()
