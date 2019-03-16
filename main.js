@@ -1,4 +1,4 @@
-import { loadJson, HttpError } from './lib.mjs'
+import { loadJson, HttpError } from './lib.js'
 import { printUsers, showError } from './print.js'
 
 loadJson()
